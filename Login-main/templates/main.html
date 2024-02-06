@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "../static/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class = "header">
+        <img src = "../static/PSG_logo.png" height = "100%" width = "8%">
+        <div class = "headertext">
+            <h4>  PSG College Of Technology </h4>
+            <pre> AMCS Department</pre>
+            <nav>
+                <ul>
+                    <li><a href = "#home"> Home </a></li>
+                    <li><a href = "#about"> About us </a></li>
+                    <li><a href = "{{url_for('home1')}}"> Events </a></li>
+                    <li><a href = "#contactus"> Contact Us </a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div id = "home" class = "slideshow">
+        <img class="mySlides" src="../static/slider1.jpg" width = "100%" height="100%">
+        <img class="mySlides" src="../static/slider2.jpg" style = "width:100%">
+    </div>
+    <script src = "../static/main.js"></script>
+    <div class = "reveal">
+        <div class = "about">
+            <h2 style = "font-family: 'Poppins', sans-serif;"> About Us</h2>
+        </div>
+        <div id = "about" class = "aboutcontent">
+            <p>The Department of Applied Mathematics and Computational Sciences has a well equipped lab 
+                facility for students of the five-year Integrated M.Sc SS/TCS/DS, M.Sc Applied Mathematics 
+                and B.Sc Computer Systems and Design. Every student will be provided with login credentials 
+                for use throughout the course time. Every lab is equipped with state of the art facilities.  
+                There are also domain specific labs which make use of technologies in those domains in 
+                innovative ways. The lab has more than 400 computers, which are connected to the centralized 
+                servers. The lab has a domain server, database server, hadoop server, Linux server and a 
+                GPU server. All the latest version of tools and technologies are available to meet the 
+                industrial requirements. The labs shall stay open from 8:30 am to 10 pm during work days, 
+                till 5 pm on Saturdays and as required during Sundays and holidays.</p>
+        </div>
+        <div class = "missioncontent">
+            <div class = "reveal">
+                <p style = "padding-left: 400px; font-size: 30px;"> OUR VISION </p>
+            <p>The fundamental objective of the department is to develop quality professionals by providing 
+                concept oriented subject knowledge through high quality teaching supplemented with practical 
+                training. Apart from specialized knowledge and skills, the programmes conducted by the Department 
+                aim to develop the personality of students by inculcating values of honesty, sincerity, team spirit 
+                and work culture.</p>
+            </div>
+        </div>
+    </div>
+    <div class = "reveal">
+    <div id="contactus" class="contactus-slide">   
+        <h1 style="font-size: 40px;"><b>Contact Us</b></h1>
+        <div class="contactus-container">
+            <div class="contactus-container-content">
+                <div class="contactus-container-content-img">
+                    <img src="../static/mail2.png" style="height:30px;">
+                </div>
+                <div class="contactus-container-content-text">
+                    @login.psgtech.ac.in
+                </div>
+            </div>
+            <div class="contactus-container-content">
+                <div class="contactus-container-content-img">
+                    <img src="../static/phone.png" style="height:30px;">
+                </div>
+                <div class="contactus-container-content-text">
+                    +91 9677303097
+                </div>
+            </div>
+            <div class="contactus-container-content">
+                <div class="contactus-container-content-img">
+                    <img src="../static/instagram2.png" style="height:30px;">
+                </div>
+                <div class="contactus-container-content-text">
+                    @login2023
+                </div>
+            </div>
+        </div>
+        <div class="flex-container">
+            <div class="flex-div">
+                <div class="flex-container-top">Chairperson</div>
+                <div class="flex-container-middle">Nayeem S</div>
+                <div class="flex-container-bottom">
+                    <div class="img-content">
+                        <img src="../static/phone.png" style="height:20px;">
+                    </div>
+                    <div class="phone-text">
+                        9677303097
+                    </div>
+                </div>
+            </div>
+            <div class="flex-div">
+                <div class="flex-container-top">Event Support</div>
+                <div class="flex-container-middle">Shyam Sundar H</div>
+                <div class="flex-container-bottom">
+                    <div class="img-content">
+                        <img src="../static/phone.png" style="height:20px;">
+                    </div>
+                    <div class="phone-text">
+                        9994430362
+                    </div>
+                </div>
+            </div>
+            <div class="flex-div">
+                <div class="flex-container-top">Pr & Support</div>
+                <div class="flex-container-middle">Rithvik N</div>
+                <div class="flex-container-bottom">
+                    <div class="img-content">
+                        <img src="../static/phone.png" style="height:20px;">
+                    </div>
+                    <div class="phone-text">
+                        9566385770
+                    </div>
+                </div>
+            </div>
+            <div class="flex-div">
+                <div class="flex-container-top">Tech Support</div>
+                <div class="flex-container-middle">Tharun L</div>
+                <div class="flex-container-bottom">
+                    <div class="img-content">
+                        <img src="../static/phone.png" style="height:20px;">
+                    </div>
+                    <div class="phone-text">
+                        6380007637
+                    </div>
+                </div>
+            </div>
+            <div class="flex-div">
+                <div class="flex-container-top">Volunteer Management</div>
+                <div class="flex-container-middle">Shankesh U K </div>
+                <div class="flex-container-bottom">
+                    <div class="img-content">
+                        <img src="../static/phone.png" style="height:20px;">
+                    </div>
+                    <div class="phone-text">
+                        9629180192
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+    </div>
+</body>
+</html>

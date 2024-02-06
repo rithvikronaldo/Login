@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/loginstyle.css">
+</head>
+<body>
+    <div class="container">
+        <div class="Bluebg">
+            <div class="box signin">
+                <h2>Already Have an Account?</h2>
+                <button class="siginBtn">Sign in</button>
+            </div>
+            <div class="box signup">
+                <h2>Don't have an Account?</h2>
+                <button class="signupBtn">Sign up</button>   
+            </div>
+        </div>
+        <div class="formBX">
+            <div class="form signinForm">
+                <form action = "/loginuser" method = "POST">
+                    <h3>Sign In</h3>
+                    <input type="text" name = "email" placeholder="Username">
+                    <input type="password" name = "pswd" placeholder="Password">
+                    <input type="submit" value="Login">
+                    <a href="#" class="forgot">Forgot Password</a>
+                </form>
+            {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                {% for message in messages %}
+                    {{message}}
+                {% endfor %}
+            {% endif %}
+            {% endwith %}
+            </div>
+            <div class="form signupForm">
+                <form action = "/signup" method = "POST">
+                    <input type="text" name = "fname" placeholder="First name" required = "">
+                    <input type="text" name = "lname" placeholder="Last name">
+                    <input type="text" name = "email" placeholder="Email Address">
+                    <input type="text" name = "gen" placeholder="Gender">
+                    <input type="text" name = "clg" placeholder="College name">
+                    <input type="number" name = "number" placeholder="Phone number">
+                    <input type="password" name = "pswd" placeholder="Password">
+                    <input type="submit" value="Register">
+                </form>
+            </div>
+        </div>
+     </div>
+     <script src="../static/loginscript.js"></script> 
+</body>
+</html>

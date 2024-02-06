@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMCS</title>
+    <link rel="stylesheet" href="../static/indexstyle.css">
+</head>
+
+
+<body>    
+    
+    <div id="home" class="main-page">
+        <div class="left-div">
+            <div class="logo-left-header">
+                <img class="left-header-logo" src="../static/login.png" alt="">
+            </div>
+            <div class="navbar-left-header">
+                <ul>
+                    <li><p><h3><a href="#event">EVENTS</a></h3></p></li>
+                    <li><p><h3><a href="#workshop">WORKSHOP</a></h3></p></li>
+                    <li><p><h3><a href="#paperpresentation">PAPER PRESENTATION</a></h3></p></li>
+                    <li><p><h3><a href="#sponsors">ABOUT US</a></h3></p></li>
+                    <li><p><h3><a href="#contactus">CONTACT US</a></h3></p></li>
+                                    
+                </ul>
+    
+            </div>   
+            <div class="footer-left-header">
+                <img class="footer-image-transition" src="../static/instagram.png" alt="">
+                <img class="footer-image-transition" src="../static/linkedin-logo.png" alt="">
+                <img class="footer-image-transition" src="../static/youtube.png" alt="">
+                <img class="footer-image-transition" src="../static/email.png" alt="">
+            </div>
+        </div>
+    
+        <div class="middle-div">
+            <img class="mySlides" src="../static/slide1.png">
+            <img class="mySlides" src="../static/slide2.png">
+        </div>
+    
+        <div class="right-div">
+            <div class="main-div-right-date">
+                <p class="multicolor-text">March</p>
+                <p style="font-family: Bahnschrift SemiBold;color: gray;">20th 21st</p>
+            </div>
+            <div style="line-height: 1;">
+                <p class="event-motto" style="width:90px;">The</p>
+                <p class="event-motto" style="width:140px;">Rise</p>
+                <p class="event-motto" style="width:300px;">Of Technocracy.</p>
+            </div>
+            <div class="padding-left-40">
+                <ul>
+                    <li class="counter">6</li>
+                    <li class="counter">8</li>
+                    <li class="counter">5</li>
+                </ul>
+                <ul>
+                    <li>EVENTS</li>
+                    <li>WORKSHOPS</li>
+                    <li>PRESENTATIONS</li>
+                </ul>
+            </div>
+    
+            <div class="register-buttons">
+                <ul>
+                    <a href = "{{url_for('about')}}">
+                        <li><button class="btn btn-pink">REGISTER</button></li>
+                    </a>
+                    <a href = "{{url_for('about')}}">
+                        <li><button class="btn btn-border-pink">LOGIN</button></li>
+                    </a>
+                </ul>
+            </div>      
+        </div>
+            <div id="navbar">
+              <a href="#home">Home</a>
+              <a href="#event">Events</a>
+              <a href="#workshop">Workshops</a>
+              <a href="#paperpresentation">Paper Presentations</a>
+              <a href="#sponsors">About Us</a>
+              <a href="#contactus">Contact Us</a>
+            </div>    
+        </div>
+    </div>
+
+    <div class="event-slide">
+        <div id="event" class="event-left-div">
+            <div class="two-event-div">
+                <div class="event-div" style="float: left;"> 
+                    <div class="event-header">
+                        <a href="#">
+                            <img src="../static/event1.png" alt="event1" style="height: 55px;margin-right: 5px;">
+                        </a>
+                        <div class="event-header-name">
+                            <a href="#" style="text-decoration: none;">
+                                EVENT 1
+                            </a>
+                        </div>
+                    </div>
+                    <p class="event-header-text"> 
+                        Let your imagination run wild with Kriyative! Whether you're an experienced artist, a hobbyist or a curious beginner, our events will inspire you to think outside the box, experiment with new techniques and express your unique vision.
+                    </p>
+                    <a href = "{{url_for('about')}}">
+                        <button type="submit" class="event-register-button"><b>Register</b>&nbsp&nbsp&nbsp></button>
+                    </a>
+                </div>
+                <div class="event-div" style="float: right;">
+                    <div class="event-header">
+                        <a href="#">
+                            <img src="../static/event2.png" alt="event1" style="height: 55px;margin-right: 5px;">
+                        </a>
+                        <div class="event-header-name">
+                            <a href="#" style="text-decoration: none;">
+                                EVENT 2
+                            </a>
+                        </div>
+                    </div>
+                    <p class="event-header-text"> 
+                        Let your imagination run wild with Kriyative! Whether you're an experienced artist, a hobbyist or a curious beginner, our events will inspire you to think outside the box, experiment with new techniques and express your unique vision.
+                    </p>
+                    <a href = "{{url_for('about')}}">
+                        <button type="submit" class="event-register-button"><b>Register</b>&nbsp&nbsp&nbsp></button>
+                    </a>
+                </div>
+    
+            </div>
+            <div class="two-event-div">
+                <div class="event-div" style="float: left;"> 
+                    <div class="event-header">
+                        <a href="#">
+                            <img src="../static/event2.png" alt="event1" style="height: 55px;margin-right: 5px;">
+                        </a>
+                        <div class="event-header-name">
+                            <a href="#" style="text-decoration: none;">
+                                EVENT 3
+                            </a>
+                        </div>
+                    </div>
+                    <p class="event-header-text"> 
+                        Let your imagination run wild with Kriyative! Whether you're an experienced artist, a hobbyist or a curious beginner, our events will inspire you to think outside the box, experiment with new techniques and express your unique vision.
+                    </p>
+                    <a href = "{{url_for('about')}}">
+                        <button type="submit" class="event-register-button"><b>Register</b>&nbsp&nbsp&nbsp></button>
+                    </a>
+                </div>
+                <div class="event-div" style="float: right;">
+                    <div class="event-header">
+                        <a href="#">
+                            <img src="../static/event4.png" alt="event1" style="height: 55px;margin-right: 5px;">
+                        </a>
+                        <div class="event-header-name">
+                            <a href="#" style="text-decoration: none;">
+                                EVENT 4
+                            </a>
+                        </div>
+                    </div>
+                    <p class="event-header-text"> 
+                        Let your imagination run wild with Kriyative! Whether you're an experienced artist, a hobbyist or a curious beginner, our events will inspire you to think outside the box, experiment with new techniques and express your unique vision.
+                    </p>
+                    <a href = "{{url_for('about')}}">
+                        <button type="submit" class="event-register-button"><b>Register</b>&nbsp&nbsp&nbsp></button>
+                    </a>
+                </div>
+    
+            </div>
+            <div class="two-event-div">
+                <div class="event-div" style="float: left;"> 
+                    <div class="event-header">
+                        <a href="#">
+                            <img src="../static/event5.png" alt="event1" style="height: 55px;margin-right: 5px;">
+                        </a>
+                        <div class="event-header-name">
+                            <a href="#" style="text-decoration: none;">
+                                Event 5
+                            </a>
+                        </div>
+                    </div>
+                    <p class="event-header-text"> 
+                        Let your imagination run wild with Kriyative! Whether you're an experienced artist, a hobbyist or a curious beginner, our events will inspire you to think outside the box, experiment with new techniques and express your unique vision.
+                    </p>
+                    <a href = "{{url_for('about')}}">
+                        <button type="submit" class="event-register-button"><b>Register</b>&nbsp&nbsp&nbsp></button>
+                    </a>
+                </div>
+                <div class="event-div" style="float: right;">
+                    <div class="event-header">
+                        <a href="#">
+                            <img src="../static/event6.png" alt="event1" style="height: 55px;margin-right: 5px;">
+                        </a>
+                        <div class="event-header-name">
+                            <a href="#" style="text-decoration: none;">
+                                EVENT 6
+                            </a>
+                        </div>
+                    </div>
+                    <p class="event-header-text"> 
+                        Let your imagination run wild with Kriyative! Whether you're an experienced artist, a hobbyist or a curious beginner, our events will inspire you to think outside the box, experiment with new techniques and express your unique vision.
+                    </p>
+                    <a href = "{{url_for('about')}}">
+                        <button type="submit" class="event-register-button"><b>Register</b>&nbsp&nbsp&nbsp></button>
+                    </a>
+                </div>
+    
+            </div>       
+            
+        </div>  
+        <div class="event-right-div">   
+            <div class="event-right-div-text">
+                <div class="black-font" style="font-size: 65px;">Unleash</div>
+                <div class="black-font" style="font-size: 65px;">your</div>
+                <div class="gradient-font" style="font-size: 65px;">potential,</div>
+                <div class="black-font" style="font-size: 65px;">participate</div>
+                <div class="black-font" style="font-size: 65px;">events.</div>
+            </div>                
+        </div>
+        <div class="event-flagship-left-div">
+            <div class="flagship-left-div-text">
+                <p>Introducing our<span class="gradient-flagship"> flagship </span>events.</p>
+            </div>
+        </div>
+        <div class="event-flagship-right-div">
+            <div class="wrapper" style="margin-top: 300px;">
+                <div class="outer">
+                  <div class="card" style="--delay:-1;background-image: url(../static/eventspl5.png);">
+                    <div class="content">
+                    </div>
+                    <a href="{{url_for('about')}}">Register</a>
+                  </div>
+                  <div class="card" style="--delay:0;background-image: url(../static/eventspl1.png);">
+                    <div class="content">
+                    
+                        
+                    </div>
+                    <a href="#">Register</a>
+                  </div>
+                  <div class="card" style="--delay:1;background-image: url(../static/eventspl2.png);">
+                    <div class="content">
+                      
+                    </div>
+                    <a href="{{url_for('about')}}">Register</a>
+                  </div>
+                  <div class="card" style="--delay:2;background-image: url(../static/eventspl3.png);">
+                    <div class="content">
+                      
+                      
+                    </div>
+                    <a href="{{url_for('about')}}">Register</a>
+                  </div>
+                  <div class="card" style="--delay:2;background-image: url(../static/eventspl4.png);">
+                    <div class="content">
+                      
+                    </div>
+                    <a href="{{url_for('about')}}">Register</a>
+                  </div>
+                </div>
+              </div>
+    </div>
+    
+    </div>
+
+    
+    <div id="paperpresentation" class="paperpresentation-slide">
+        <div class="paperpresentation-left-div">
+            <div class="container">
+                <div class="gallery">
+                        <a href = "{{url_for('about')}}"><div class="image-box" style="background-image: url(../static/flagshipevent1.png);"><h3>Atom</h3></div></a>
+                        <a href = "{{url_for('about')}}"><div class="image-box" style="background-image: url(../static/flagshipevent2.png);"><h3>Last stand</h3></div></a>
+                        <a href = "{{url_for('about')}}"><div class="image-box" style="background-image: url(../static/flagshipevent3.png);"><h3>Invenirer</h3></div></a>
+                        <a href = "{{url_for('about')}}"><div class="image-box" style="background-image: url(../static/flagshipevent4.png);"><h3>Math pirates</h3></div></a>
+                        <a href = "{{url_for('about')}}"><div class="image-box" style="background-image: url(../static/flagshipevent5.png);"><h3>Zoldyck</h3></div></a>
+                </div>
+            </div>
+
+        </div>
+        <div class="paperpresentation-right-div">
+            <div class="black-font" style="color: grey;">Engineering.</div>
+            <div class="gradient-font">Researching.</div>
+            <div class="black-font" style="color: grey;">Solutions.</div>
+        </div>
+    
+    </div>
+
+    <div id="workshop" class="workshop-slide">
+        <div id="workshop-left" class="workshop-left-div">
+            <div class="workshop-left-div-text" style="color: grey;">
+                <p>Join the <span class="gradient-masterclass-workshop">masterclass workshops </span>from innovation leaders and industry experts. </p>
+            </div>
+        </div>
+        <div  id="workshop-right" class="workshop-right-div" style="overflow-x:hidden;overflow-y:scroll;">
+            <div class="left-workshop-table">
+                <div class="workshop-card">
+                    <div class="workshop-card-img" style="background-image: url(../static/workshop1.png);"></div>
+                    <div class="workshop-card-content">
+                        iot system design using embedded C and python.
+                        <br><br>
+                        <a href = "{{url_for('about')}}">
+                            <button type="submit" class="event-register-button" style="margin-left: 0;height: 30px;"><b>Register</b>&nbsp&nbsp&nbsp></button>
+                        </a>
+                    </div>
+                    <div class="workshop-number">1</div>
+                   
+                </div>
+                <div class="workshop-card">
+                    <div class="workshop-card-img" style="background-image: url(../static/workshop1.png);"></div>
+                    <div class="workshop-card-content">
+                        iot system design using embedded C and python.
+                        <br><br>
+                        <a href = "{{url_for('about')}}">
+                            <button type="submit" class="event-register-button" style="margin-left: 0;height: 30px;"><b>Register</b>&nbsp&nbsp&nbsp></button>
+                        </a>
+                    </div>
+                    <div class="workshop-number">3</div>
+                
+                </div>
+                <div class="workshop-card">
+                    <div class="workshop-card-img" style="background-image: url(../static/workshop1.png);">
+
+                    </div>
+                    <div class="workshop-card-content">
+                        iot system design using embedded C and python.
+                        <br><br>
+                        <a href = "{{url_for('about')}}">
+                            <button type="submit" class="event-register-button" style="margin-left: 0;height: 30px;"><b>Register</b>&nbsp&nbsp&nbsp></button>
+                        </a>
+                    </div>
+                    <div class="workshop-number">5</div>
+                
+                </div>
+                <div class="workshop-card">
+                    <div class="workshop-card-img" style="background-image: url(../static/workshop1.png);">
+                    </div>
+                    <div class="workshop-card-content">
+                        iot system design using embedded C and python.
+                        <br><br>
+                        <a href = "{{url_for('about')}}">
+                            <button type="submit" class="event-register-button" style="margin-left: 0;height: 30px;"><b>Register</b>&nbsp&nbsp&nbsp></button>
+                        </a>
+                    </div>
+                    <div class="workshop-number">7</div>
+                </div>
+                
+            
+                
+            </div>
+
+
+            <div class="right-workshop-table">
+                <div class="workshop-card">
+                    <div class="workshop-card-img" style="background-image: url(../static/workshop1.png);">
+
+                    </div>
+                    <div class="workshop-card-content">
+                        iot system design using embedded C and python.
+                        <br><br>
+                        <a href = "{{url_for('about')}}">
+                            <button type="submit" class="event-register-button" style="margin-left: 0;height: 30px;"><b>Register</b>&nbsp&nbsp&nbsp></button>
+                        </a>
+                    </div>
+                    <div class="workshop-number">2</div>
+                
+                </div>
+                <div class="workshop-card">
+                    <div class="workshop-card-img" style="background-image: url(../static/workshop1.png);">
+
+                    </div>
+                    <div class="workshop-card-content">
+                        iot system design using embedded C and python.
+                        <br><br>
+                        <a href = "{{url_for('about')}}">
+                            <button type="submit" class="event-register-button" style="margin-left: 0;height: 30px;"><b>Register</b>&nbsp&nbsp&nbsp></button>
+                        </a>
+                    </div>
+                    <div class="workshop-number">4</div>
+                
+                </div>
+                <div class="workshop-card">
+                    <div class="workshop-card-img" style="background-image: url(../static/workshop1.png);">
+                        
+                    </div>
+                    <div class="workshop-card-content">
+                        iot system design using embedded C and python.
+                        <br><br>
+                        <a href = "{{url_for('about')}}">
+                            <button type="submit" class="event-register-button" style="margin-left: 0;height: 30px;"><b>Register</b>&nbsp&nbsp&nbsp></button>
+                        </a>
+                    </div>
+                    <div class="workshop-number">6</div>
+                
+                </div>
+                <div class="workshop-card">
+                    <div class="workshop-card-img" style="background-image: url(../static/workshop1.png);"></div>
+                    <div class="workshop-card-content">
+                        iot system design using embedded C and python.
+                        <br><br>
+                        <a href="{{url_for('about')}}">
+                            <button type="submit" class="event-register-button" style="margin-left: 0;height: 30px;"><b>Register</b>&nbsp&nbsp&nbsp></button>
+                        </a>
+                    </div>
+                    <div class="workshop-number">8</div>
+                
+                </div>
+                
+            </div>
+
+        </div>
+    </div>
+    <div id="sponsors" class="sponsors-slide">
+        <div class="left-sponsors">
+            <div class="row">
+                <div class="column">
+                    <h2 style="font-family: 'Poppins',sans-serif;font-weight: 600;">Event sponsor</h2>
+                  <div class="card">
+                    <img src="../static/polarbear.png" style="width: 95%;margin: 3px;">
+                    <p>Polar bear</p>
+                  </div>
+                </div>
+              
+                <div class="column">
+                  <h2 style="font-family: 'Poppins',sans-serif;font-weight: 600;">Co sponsor</h2>
+                  <div class="card">
+                    <img src="../static/thefrozenstick.png" style="width: 95%;margin: 3px;">
+                    <p>Frozen stick</p>
+                  </div>
+                </div>
+            </div>
+            <h2 style="font-family: 'Poppins',sans-serif;font-weight: 600;">Stall sponsors</h2>
+            <div class="tech-slideshow">
+                <div class="mover-1"></div>
+                <div class="mover-2"></div>
+              </div>
+              <br><br>
+              <br>
+            
+              <div class="tech-slideshow">
+                <div class="mover-1"></div>
+                <div class="mover-2"></div>
+              </div>
+        </div>
+
+        <div class="right-sponsors">
+            <div class="gradient-font" style="font-size: 70px;">Login'23</div>
+            <div class="black-font">Sponsors.</div>
+        </div>
+    </div>
+    <div id="contactus" class="contactus-slide">   
+        <h1 style="font-size: 40px;"><b>Contact Us</b></h1>
+        <div class="contactus-container">
+            <div class="contactus-container-content">
+                <div class="contactus-container-content-img">
+                    <img src="../static/mail2.png" style="height:30px;">
+                </div>
+                <div class="contactus-container-content-text">
+                    @login.psgtech.ac.in
+                </div>
+            </div>
+            <div class="contactus-container-content">
+                <div class="contactus-container-content-img">
+                    <img src="../static/phone.png" style="height:30px;">
+                </div>
+                <div class="contactus-container-content-text">
+                    +91 9677303097
+                </div>
+            </div>
+            <div class="contactus-container-content">
+                <div class="contactus-container-content-img">
+                    <img src="../static/instagram2.png" style="height:30px;">
+                </div>
+                <div class="contactus-container-content-text">
+                    @login2023
+                </div>
+            </div>
+        </div>
+        <div class="flex-container">
+            <div class="flex-div">
+                <div class="flex-container-top">Chairperson</div>
+                <div class="flex-container-middle">Nayeem S</div>
+                <div class="flex-container-bottom">
+                    <div class="img-content">
+                        <img src="../static/phone.png" style="height:20px;">
+                    </div>
+                    <div class="phone-text">
+                        9677303097
+                    </div>
+                </div>
+            </div>
+            <div class="flex-div">
+                <div class="flex-container-top">Event Support</div>
+                <div class="flex-container-middle">Shyam Sundar H</div>
+                <div class="flex-container-bottom">
+                    <div class="img-content">
+                        <img src="../static/phone.png" style="height:20px;">
+                    </div>
+                    <div class="phone-text">
+                        9994430362
+                    </div>
+                </div>
+            </div>
+            <div class="flex-div">
+                <div class="flex-container-top">Pr & Support</div>
+                <div class="flex-container-middle">Rithvik N</div>
+                <div class="flex-container-bottom">
+                    <div class="img-content">
+                        <img src="../static/phone.png" style="height:20px;">
+                    </div>
+                    <div class="phone-text">
+                        9566385770
+                    </div>
+                </div>
+            </div>
+            <div class="flex-div">
+                <div class="flex-container-top">Tech Support</div>
+                <div class="flex-container-middle">Tharun L</div>
+                <div class="flex-container-bottom">
+                    <div class="img-content">
+                        <img src="../static/phone.png" style="height:20px;">
+                    </div>
+                    <div class="phone-text">
+                        6380007637
+                    </div>
+                </div>
+            </div>
+            <div class="flex-div">
+                <div class="flex-container-top">Volunteer Management</div>
+                <div class="flex-container-middle">Shankesh U K </div>
+                <div class="flex-container-bottom">
+                    <div class="img-content">
+                        <img src="../static/phone.png" style="height:20px;">
+                    </div>
+                    <div class="phone-text">
+                        9629180192
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+    
+    
+    
+    <script src="../static/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In Form</title>
+    <link rel="stylesheet" href="../static/registerevent.css">
+</head>
+
+<body>
+    <div class="wrapper login">
+        <div class="container">
+            <div class="col-left">
+                <div class="login-text">
+                    <h2>Welcome!</h2>
+                    <p>{{f_name}}</p> <a href="{{url_for('afterlogin')}}" class="btn">Back to Menu</a>
+                </div>
+            </div>
+            <div class="col-right">
+                <div class="login-form">
+                    <h2>Register</h2>
+                    <form action="/registerevent" method = "POST" onsubmit = "showAlert()">
+                        <p> <label>First Name</label> <input type="text" name = "f_name" value = "{{f_name}}"> </p>
+                        <p> <label>Last Name</label> <input type="text" name = "l_name" value = "{{l_name}}"> </p>
+                        <p> <label>Email Address</label> <input type="email" name = "email" value = "{{email}}"> </p>
+                        <p id = "topic"> EVENTS </p>
+                        <select name="event">
+                            <option value="{{list_events[0]}}" name="event_one">{{list_events[0]}}</option>
+                            <option value="{{list_events[1]}}" name="event_two">{{list_events[1]}}</option>
+                            <option value="{{list_events[2]}}" name="event_three">{{list_events[2]}}</option>
+                            <option value="{{list_events[3]}}" name="event_four">{{list_events[3]}}</option>
+                            <option value="{{list_events[4]}}" name="event_five">{{list_events[4]}}</option>
+                            <option value="{{list_events[5]}}" name="event_six">{{list_events[5]}}</option>
+                        </select>
+                        <p> <input type="submit" value="Confirm"> </p>
+                        {% with messages = get_flashed_messages() %}
+                        {% if messages %}
+                            {% for message in messages %}
+                                {{message}}
+                            {% endfor %}
+                        {% endif %}
+                        {% endwith %}
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+<script>
+    function showAlert() {
+    alert("Form submitted!");
+    }
+</script>
+</body>
+
+</html>
